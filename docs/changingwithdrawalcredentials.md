@@ -37,7 +37,7 @@ A withdrawal address is an Ethereum execution address that will receive consensu
 - the Ethereum address is secured by a hardware wallet
 - the Ethereum address is that of a smart contract with the ability to withdraw funds
 
-The execution address must be supplied in [EIP-55](https://eips.ethereum.org/EIPS/eip-55) format, _i.e._ using mixed case for checksum.  An example of a mixed-case Ethereum address is `0x8f0844Fd51E31ff6Bf5baBe21DCcf7328E19Fd9F`
+The execution address must be supplied in [EIP-55](https://eips.ethereum.org/EIPS/eip-55) format, _i.e._ using mixed case for checksum.  An example of a mixed-case Ethereum address is `0x9960B4EBb8b92f2A85Cb31e9Fbb9D562b11e152B`
 
 ### Online and Offline
 An _online_ computer is one that is is connected to the internet.  It should be running a consensus node connected to the larger Ethereum network.  An online computer is required to carry out the process, to obtain information from the consensus node and to broadcast your actions to the rest of the Ethereum network.
@@ -221,7 +221,7 @@ Similar to the previous section, however instead of specifying the mnemonic, it 
 
 
 ```
-ethdo validator credentials set --private-key=0x3b…9c --withdrawal-address=0x8f…9F
+ethdo validator credentials set --private-key=0x3b…9c --withdrawal-address=0x9960B4EBb8b92f2A85Cb31e9Fbb9D562b11e152B
 ```
 
 #### Using an account
@@ -243,7 +243,7 @@ ethdo validator credentials get --validator=123
 The result should start with the phrase "Ethereum execution address" and display the execution address you chose at the beginning of the process, for example:
 
 ```
-Ethereum execution address: 0x8f0844Fd51E31ff6Bf5baBe21DCcf7328E19Fd9F
-```
+Ethereum execution address: 
+```0x9960B4EBb8b92f2A85Cb31e9Fbb9D562b11e152B
 
 If the result starts with the phrase "BLS credentials" then it may be that the operation has yet to be incorporated on the chain, please wait a few minutes and check again.  If this continues to be the case please obtain help to understand why the change operation failed to work.
